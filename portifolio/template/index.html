@@ -18,7 +18,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <div class="logo-container mx-4">
-          <img class="logo" src="{% static 'images/test.png' %}" alt="Logo" >
+          <img class="logo" src="{% static 'images/me.jpg' %}" alt="Logo" >
         </div>
         </a>
         <a class="nav-link active  me-4 hn" href="#"><b class="name">RAHUL P.R</b></a>
@@ -46,16 +46,16 @@
               <a href="./#projects" class="btn ">PROJECTS</a>
             </div>
             <div class="social">
-              <a href="" class="link d-block">
+              <a target="_blank" href=" https://www.linkedin.com/in/rahul-devolop?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpneBs34DSae%2F7VHLiDlMsw%3D%3D" class="link d-block">
                   <i class="bi bi-linkedin"></i>
               </a>
-              <a href="" class="link d-block">
+              <a target="_blank" href="https://www.instagram.com/_rahul_junior?igsh=dG9td2l2OXBvaG9y" class="link d-block">
                   <i class="bi bi-instagram"></i>
               </a>
-              <a href="" class="link d-block">
+              <a target="_blank" href="https://github.com/rahulxzoro" class="link d-block">
                   <i class="bi bi-github"></i>
               </a>
-              <a href="" class="link d-block">
+              <a target="_blank" href="https://www.youtube.com/channel/UCdoymA2OVTErd45q7XP1JcA" class="link d-block">
                 <i class="bi bi-youtube"></i>
               </a>
           </div>
@@ -124,7 +124,7 @@
         <div class="pcontent">
         <h3 class="pname">Furniture</h3>
         <p class="pd">I created an online store for furniture, featuring a variety of stylish pieces. With easy navigation and secure payments, users can shop hassle-free. This project allowed me to delve into e-commerce web development and enhance my skills in building user-friendly platforms.</p>
-        <a href="" class="btn btn--med btn--theme ">Case study</a>
+        <a target="_blank" href="https://github.com/rahulxzoro/finalproject.git" class="btn btn--med btn--theme ">Git Link</a>
       </div>
     </div>
     </div>
@@ -137,7 +137,7 @@
           <h3 class="pname">Boat Clone</h3>
         <p class="pd">I recreated the Boat Nirvana website, focusing on its beautiful design and easy-to-use features. This project helped me improve my web development skills and understand how to make websites that people enjoy using.
         </p>
-        <a href="" class="btn btn--med btn--theme ">Case study</a>
+        <a href="" class="btn btn--med btn--theme ">Git Link</a>
         </div>
       </div>
       </div>
@@ -150,7 +150,7 @@
             <h3 class="pname">Timezone clone</h3>
           <p class="pd">I re-created the frontend of Timezne's official web app because I got attracted to their beautiful UI. It was a great experience for me to build the frontend..
           </p>
-          <a href="" class="btn btn--med btn--theme ">Case study</a>
+          <a href="" class="btn btn--med btn--theme ">Git Link</a>
           </div>
         </div>
         </div>
@@ -164,18 +164,20 @@
               <h2 class="project1"><b>CONTACT</b></h2>
       <!-- <p class="pdesc1">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p> -->
             </div>
-            <form action="" method="POST">
+            <form action="{% url 'submit_form' %}" method="POST">
+              {% csrf_token %}
               <label class="cc" for="name">Your Name</label>
               <input type="text" id="name" name="name" placeholder="Your name.." required>
-      
+          
               <label class="cc" for="email">Your Email</label>
               <input type="email" id="email" name="email" placeholder="Your email.." required>
-      
+          
               <label class="cc" for="message">Message</label>
               <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
-      
-              <a href="" class="btn sub">submit</a>
-            </form>
+          
+              <button type="submit" class="btn sub">Submit</button>
+          </form>
+          
        
               <img class="bg-image1" src="{% static 'images/bg.svg' %}" alt="">
               <div class="gradient-overlay1">
@@ -197,10 +199,10 @@
       <div class="fc">
       <h5 class="dd">SOCIAL</h5>
       <div class="icoo">
-       <a href=""> <i class="bi bi-linkedin "></i></a>
-       <a href=""><i class="bi bi-instagram p-1"></i></a>
-       <a href=""><i class="bi bi-github p-1"></i></a>
-       <a href=""><i class="bi bi-youtube p-1"></i></a>
+       <a target="_blank" href="https://www.linkedin.com/in/rahul-devolop?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BpneBs34DSae%2F7VHLiDlMsw%3D%3D"> <i class="bi bi-linkedin "></i></a>
+       <a target="_blank" href="https://www.instagram.com/_rahul_junior?igsh=dG9td2l2OXBvaG9y"><i class="bi bi-instagram p-1"></i></a>
+       <a target="_blank" href="https://github.com/rahulxzoro"><i class="bi bi-github p-1"></i></a>
+       <a target="_blank" href="https://www.youtube.com/channel/UCdoymA2OVTErd45q7XP1JcA"><i class="bi bi-youtube p-1"></i></a>
     </div>
     </div>
   </div>
